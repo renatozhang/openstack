@@ -6,7 +6,7 @@
 5. Koll概述和OpenStack所有节点linux系统初始化配置
 6. 安装koll-ansible
 7. 自定义kolla-ansible安装OpenStack的相关配置文件
-8. 开始觊觎kolla-ansible安装OpenStack私有云
+8. 开始基于kolla-ansible安装OpenStack私有云
 ## OpenStack概述
 ### OpenStack概述：
 OpenStack是一个NASS美国国家航空航天局和Rackspace合作研发的，以Apache许可证授权，并且是一个自由团建和开源代码项目。
@@ -225,7 +225,7 @@ Kolla实际上是分为两大块的，一部分，Kolla提供了生产环境级�
 
 ### 配置网卡信息
 #### 在zz11上添加一个新的网卡，类型是brige模式
-|---|---|---|---|
+---|---|---|---
 |IP地址|网路类型|网卡|在OpenStack网略中的作用|
 |192.168.98.11|brige|ens33|openstack内部管理网略（managment network）日后Horizon web界面访问，就是通过这个IP地址|
 |无IP（不能配置IP）|brige|ens37|外部网络（external network）,让neutron的br-ex 绑定使用，OpenStack中的虚拟机是通过这块网卡和外网通信的|
