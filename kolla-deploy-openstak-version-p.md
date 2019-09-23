@@ -36,7 +36,7 @@ OpenShift基于一个开源生态系统为移动应用，数据库服务等，�
 
 那些厂商在做PaaS平台？
 
-例2： 新浪的SAE PaaS云平台，福欧内：http://www.sinacloud/sea.html
+例2： 新浪的SAE PaaS云平台，国内：http://www.sinacloud/sea.html
 
 #### Paas的四大特点：
 * 支持PHP、Java、Python三种语言环境，适用于多种业务场景。
