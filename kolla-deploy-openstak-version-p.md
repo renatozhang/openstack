@@ -243,7 +243,8 @@ Kolla实际上是分为两大块的，一部分，Kolla提供了生产环境级�
 	[root@zz11 network-scripts]# systemctl restart network
 ### 安装基础包和docker服务
 1. 安装基础包
-	
+		
+
 		[root@zz11 network-scripts]# yum install python-devel libffi-devel gcc openssl-devel git python-pip -y
 		# 升级一下pip，不然后期安装会报警告
 		[root@zz11 network-scripts]# pip install -U pip
