@@ -225,9 +225,12 @@ Kolla实际上是分为两大块的，一部分，Kolla提供了生产环境级�
 
 ### 配置网卡信息
 #### 在zz11上添加一个新的网卡，类型是brige模式
----|---|---|---
+|---|---|---|---|
+
 |IP地址|网路类型|网卡|在OpenStack网略中的作用|
+
 |192.168.98.11|brige|ens33|openstack内部管理网略（managment network）日后Horizon web界面访问，就是通过这个IP地址|
+
 |无IP（不能配置IP）|brige|ens37|外部网络（external network）,让neutron的br-ex 绑定使用，OpenStack中的虚拟机是通过这块网卡和外网通信的|
 
 #### 注：如果服务器直接安装，两块网卡的IP，就算是同一网段或者不同网段都可以的
