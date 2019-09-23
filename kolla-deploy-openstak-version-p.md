@@ -446,7 +446,7 @@ passwords.yml  #openstack中各个服务的密码
 #### openstack的作用
 #### openstack版本命名规则
 #### openstack各组件关系
-#### Kolla概述和openstack所有结点linux系统初始配置
+#### Kolla概述和openstack所有节点linux系统初始配置
 #### 安装kolla-ansible
 #### 自定义kolla-ansible安装openstack的相关配置文件
 #### 开始基于kolla-ansible安装openstack私有云
