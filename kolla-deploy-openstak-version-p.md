@@ -9,14 +9,14 @@
 8. 开始基于kolla-ansible安装OpenStack私有云
 ## OpenStack概述
 ### OpenStack概述：
-OpenStack是一个NASS美国国家航空航天局和Rackspace合作研发的，以Apache许可证授权，并且是一个自由团建和开源代码项目。
+OpenStack是一个NASS美国国家航空航天局和Rackspace合作研发的，以Apache许可证授权，并且是一个自由软件和开源代码项目。
 
 Open是开放，Stack则是堆砌之意，合起来就是将众多的功能服务堆积起来的集合，让人们通过OpenStack云计算项目，能够将诸如计算能力、存储、网络和软件等资源抽象成服务，以便让用户通过互联网远程来享用，付费的形式也变得因需而定，调整方便，拥有极强的虚拟可拓展性，是公共和私有云的建设与管理软件中的优秀开源项目。
 ## OpenStack的作用
 ### OpenStack的作用：
 OpenStack是一个云平台管理的项目，他不是一个软件。这个项目有主要的组件组合起来完成一些具体的工作。
 
-OpenStack是一个旨在为公共及私有云建设与管理提供软件的开源项目。他的社区拥有查过130家企业及1350位开发者，这些机构与个人豆浆OpenStack作为基础设施即服务（简称IaaS）资源通用前端。
+OpenStack是一个旨在为公共及私有云建设与管理提供软件的开源项目。他的社区拥有查过130家企业及1350位开发者，这些机构与个人都将OpenStack作为基础设施即服务（简称IaaS）资源通用前端。
 
 ### 1、 IaaS(Infrastrure as a Service)，即基础设施即服务。 
 
@@ -389,7 +389,10 @@ passwords.yml  #openstack中各个服务的密码
 	
 2. 配置单节点清单文件（目前只有一个节点）
 
-		[root@zz11 ~]# vim /etc/kolla/all-in-one  #把localhost替换成 
+		[root@zz11 ~]# vim /etc/kolla/all-in-one  #把localhost替换成
+		:1,$s/localhost/xuegod63/
+		:1,$s/ansible_connection=local//  
+
 		# These initial groups are the only groups required to be modified. The
 		# additional groups are for more control of the environment.
 		[control]
